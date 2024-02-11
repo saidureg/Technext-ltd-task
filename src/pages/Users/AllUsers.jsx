@@ -13,7 +13,7 @@ const AllUsers = () => {
   return (
     <div>
       <h3>All Users</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {users.map((user, idx) => (
           <UsersCard key={idx} user={user} />
         ))}
