@@ -12,7 +12,7 @@ const UsersCard = (user) => {
   // console.log(user);
   const { id, firstName, lastName, image, email, address, company } = user.user;
   return (
-    <Card sx={{ maxWidth: 345, mt: 2 }}>
+    <Card sx={{ maxWidth: 345, mt: 2, bgcolor: "#e8eaf6" }}>
       <Box sx={{ display: "flex", justifyContent: "space-evenly", py: 1 }}>
         <Avatar alt={firstName} src={image} />
         <Box>
