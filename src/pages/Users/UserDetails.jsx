@@ -1,26 +1,21 @@
 import {
   Avatar,
   Box,
-  Button,
   Card,
   CardContent,
   Divider,
   Typography,
 } from "@mui/material";
-import { Link, useLoaderData } from "react-router-dom";
-import SendIcon from "@mui/icons-material/Send";
+import { useLoaderData } from "react-router-dom";
+
+import BackButton from "../../components/BackButton";
 
 const UserDetails = () => {
   const { firstName, lastName, image, email, address, company } =
     useLoaderData();
-  //   console.log(firstName, lastName, image, email, address, company);
   return (
     <Box>
-      <Link to="/">
-        <Button variant="contained" endIcon={<SendIcon />}>
-          Go Back
-        </Button>
-      </Link>
+      <BackButton />
       <Card sx={{ maxWidth: 400, mx: "auto", mt: 10, bgcolor: "bisque" }}>
         <Box sx={{ display: "block", py: 1 }}>
           <Avatar
